@@ -1,0 +1,126 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0e6d2;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 2rem;
+    background-image: url('messy_lawn.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#game-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #5d4037;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px dashed #5d4037;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #5d4037;
+}
+
+#character-display {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.character {
+    text-align: center;
+}
+
+.character img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #8d6e63;
+    background-color: #efebe9;
+    object-fit: cover;
+}
+
+#main-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#status-display, #log-display {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+    background-color: rgba(239, 235, 233, 0.9);
+    border-radius: 5px;
+}
+
+#task-list {
+    list-style-type: '👉';
+    padding-left: 20px;
+}
+
+#task-list li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+#log-box {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#log-box p {
+    margin: 0 0 10px 0;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 5px;
+}
+
+#log-box p:last-child {
+    border-bottom: none;
+}
+
+#controls {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px dashed #5d4037;
+}
+
+#action-buttons button, #do-nothing-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: inherit;
+    background-color: #a1887f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s;
+}
+
+#action-buttons button:hover, #do-nothing-btn:hover {
+    background-color: #8d6e63;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
